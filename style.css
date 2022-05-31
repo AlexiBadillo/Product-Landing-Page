@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
+    background-blend-mode: normal, lighten, soft-light;
+    font-family: 'Akshar', sans-serif;
+}
+#header {
+    background-color: #BDBBBE;
+    display: grid;
+    grid-template-columns: auto max-content;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    justify-content: space-between;
+    z-index: 100;
+    
+}
+#header-img {
+    width: 80px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+.logo {
+    display: flex;
+    height: auto;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+#nav-bar {
+    padding: 20px;    
+}
+#nav-bar ul {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    align-items: center;
+    list-style: none;
+}
+#nav-bar ul li {
+    padding: 0 20px;
+    text-align: center;
+    border: 1px solid #fff;
+}
+#nav-bar ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+#nav-bar ul li a:hover {
+    color: crimson;
+    text-decoration: underline;
+}
+.habilities {
+    margin-top: 100px;
+    padding: 20px;
+}
+.habilities-list {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    padding: 20px 0;
+}
+.habilities-icons {
+    text-align: center;
+    margin: auto 0;
+}
+.habilities-icons i {
+    font-size: 45px;
+    color: crimson;
+}
+.textos {
+    padding: 5px;
+}
+.textos h3 {
+    font-size: 25px;
+}
+.textos p {
+    font-size: 18px;
+}
+.box-article {
+    padding: 25px;
+    width: 100%;
+    margin: 30px 0 90px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+.box {
+    border: 1px solid #fff;
+    padding: 15px;
+}
+.box h3 {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0;
+}
+.box p {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 0;
+}
+.box ul {
+    list-style: none;
+    margin: 15px 0;
+}
+.box ul li {
+    text-align: center;
+    margin: 10px 0;
+}
+.box button {
+    padding: 10px;
+    display: block;
+    margin: 10px auto;
+    background-color: crimson;
+    border: 1px solid #fff;    
+}
+.box button .button-box {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.box button:hover {
+    background-color: #48e;
+}
+
+
+.main {
+}
+.main-article {
+    width: 90%;
+    margin: 0 auto;
+}
+.main-article p {
+    font-size: 20px;
+    padding: 25px 0;
+}
+#video {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    min-width: 300px;
+}
+/*Aqui empieza el form*/
+#form {
+    margin: 20px 0;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+.form-label {
+    text-align: center;
+    margin: 15px 0;
+}
+#email {
+    width: 90%;
+    padding: 15px;
+    margin-top: 10px;
+}
+#submit {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: crimson;
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    width: 90%;
+    font-size: 20px;
+}
+#submit:hover {
+    background-color: aqua;
+    color: #000;
+}
+.main-article h2 {
+    text-align: center;
+    font-size: 35px;
+    margin: 30px 0 20px 0;
+    border: 1px solid;
+}
+.main-article p {
+    font-size: 30px;
+    font-weight: 800;
+}
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+/*Los MediaQueries*/
+@media screen and (max-width: 600px) {
+    .logo {
+        margin: 0 auto;
+    }
+    #header {
+        grid-template-rows: max-content max-content;
+        grid-auto-flow: column;
+        justify-content: center;
+        top: 0px;
+    }
+    .main-article p {
+        font-size: 22px;
+    }
+    .habilities-list {
+        margin-top: 60px;
+    }
+    .box-article {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
